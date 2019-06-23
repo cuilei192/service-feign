@@ -1,0 +1,13 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: service-feign
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      profile: dev
+      label: master
+feign:
+  hystrix:
+    enabled: true
