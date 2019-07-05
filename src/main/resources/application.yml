@@ -2,10 +2,10 @@ server:
   port: 8765
 spring:
   application:
-    name: service-feign
+    name: serviceFeign
   cloud:
     config:
-      uri: http://localhost:8888/
+      uri: http://192.168.204.130:8888/
       profile: dev
       label: master
 feign:
