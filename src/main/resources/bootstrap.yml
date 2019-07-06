@@ -1,0 +1,20 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: serviceFeign
+  cloud:
+    config:
+      uri: http://192.168.204.130:8888/
+      profile: dev
+      label: master
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000
