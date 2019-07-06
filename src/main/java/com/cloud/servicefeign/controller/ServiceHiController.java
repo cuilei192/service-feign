@@ -19,4 +19,9 @@ public class ServiceHiController {
         return serviceHi.sayHiFromClientOne( name );
     }
 
+    @GetMapping(value = "/feign")
+    public String feign() {
+        return "service-feign";
+    }
+
 }
