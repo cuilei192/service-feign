@@ -21,7 +21,7 @@ public class ServiceHiController {
 
     @GetMapping(value = "/feign")
     public String feign() {
-        return "service-feign";
+        return "service-feignn";
     }
 
 }
