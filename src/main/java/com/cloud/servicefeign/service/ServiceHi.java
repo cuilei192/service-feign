@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "eurekaClient",fallback = ServiceHiHystric.class)
+@FeignClient(value = "eureka-client",fallback = ServiceHiHystric.class)
 public interface ServiceHi {
 
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
