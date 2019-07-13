@@ -21,3 +21,5 @@ hystrix:
 eureka:
   instance:
     hostname: service-feign
+ribbon:
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
